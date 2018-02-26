@@ -1,0 +1,81 @@
+{
+"elaboracion" : [ {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    }
+],
+"acabado" : [
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    },
+    {
+    "paso" : ""
+    }
+],
+"descripcion" : "",
+"dificultad" : "",
+"familia" : "",
+"ingredientes" : [
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    },
+    {
+    "producto" : "",
+    "cantidad" : ""
+    }
+],
+"pax" : 4,
+"src" : "",
+"tiempo" : "",
+"titulo" : ""
+}
