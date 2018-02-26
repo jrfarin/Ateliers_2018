@@ -1,0 +1,125 @@
+<!-- Header with Logo & Navbar Starts -->
+<app-header></app-header>
+
+<!-- Main Content -->
+<main class="container noPadding">
+    <div class="page-header d-md-none">
+        <h1>Coolinary Market: Recetas 2018 <small><cite>By J.R. Farin</cite></small></h1>
+    </div>
+    <div class="row mt-4 mb-5" *ngFor="let receta of _rs.infoRecetas; let i = index">
+        <div class="col-sm-12 col-md-4 noPadding" >
+            <div class="row mb-3">
+                <div class="col-sm-12 mb-2 noPadding text-center">
+                    <h5 class="FS1 gold mt-2 mb-2">{{receta.titulo}}</h5>
+                    <p class="card-text"><em>{{receta.descripcion}}</em></p>
+                    <span class="author gold">By J.R. Farin</span>
+                    <img src="assets/img/recetas/swirl.png" class="center-block">
+                </div>
+                <div class="col-sm-12 mt-3 mb-2 noPadding">
+                    <img class="card-img-top" [src]="receta.src" alt="">
+                </div>
+                <div class="col text-center gold">
+                    <span class="icon-family"></span>
+                    <span class="cinzel">{{receta.familia}}</span>
+                </div>
+                <div class="col text-center gold">
+                    <span class="icon-clock"></span>
+                    <span class="cinzel">{{receta.tiempo}}</span>
+                </div>
+                <div class="col text-center gold">
+                    <span class="icon-users"></span>
+                    <span class="cinzel">{{receta.pax}}</span>
+                </div>
+                <div class="col text-center gold">
+                    <span class="icon-gauge"></span>
+                    <span class="cinzel">{{receta.dificultad}}</span>
+                </div>
+            </div>
+            <div class="col-sm-12 noPadding">
+                <div class="accordion" id="accordionIng" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header" id="headingIng">
+                            <a data-toggle="collapse" data-parent="#accordionIng" href="#ingredientes{{ i + 1 }}" aria-expanded="true" aria-controls="ingredientes">
+                                <h5 class="mb-0">
+                                    Ingredientes <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <div id="ingredientes{{ i + 1 }}" class="collapse" aria-labelledby="headingIng" data-parent="#accordionIng">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                  <table class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th>Ingredientes</th>
+                                          <th class="text-right">Cantidad</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr *ngFor="let item of receta.ingredientes">
+                                            <td>{{item.producto}}</td>
+                                            <td class="text-right">{{item.cantidad}}</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="d-sm-none d-xs-none">
+        </div>
+
+        <div class="col-sm-12 col-md-8 noPadding">
+            <div class="row mb-3">
+
+                <div class="col-sm-12 noPadding mt-105">
+                    <div class="accordion" id="accordionElb" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header offset_top_i20" id="headingElb">
+                                <a data-toggle="collapse" data-parent="#accordionElb" href="#elaboracion{{ i + 1 }}" aria-expanded="true" aria-controls="elaboracion">
+                                    <h5 class="mb-0">
+                                        Elaboración <i class="fa fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+                            <div id="elaboracion{{ i + 1 }}" class="collapse" aria-labelledby="headingElb" data-parent="#accordionElb">
+                                <div class="card-body">
+                                    <ul class="mt-2">
+                                        <li *ngFor="let item of receta.elaboracion">{{item.paso}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 noPadding">
+                    <div class="accordion" id="accordionFin" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header offset_top_i20" id="headingFin">
+                                <a data-toggle="collapse" data-parent="#accordionFin" href="#acabado{{ i + 1 }}" aria-expanded="true" aria-controls="acabado">
+                                    <h5 class="mb-0">
+                                        Acabado <i class="fa fa-angle-up rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+                            <div id="acabado{{ i + 1 }}" class="collapse show" aria-labelledby="headingFin" data-parent="#accordionFin">
+                                <div class="card-body">
+                                    <ul class="mt-2">
+                                        <li *ngFor="let item of receta.acabado">{{item.paso}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/recetas/swirl.png" class="center-block hide">
+    </div>
+</main>
+
+<!-- Footer with Social Buttons Starts -->
+<app-footer></app-footer>
