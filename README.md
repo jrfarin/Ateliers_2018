@@ -1,4 +1,5 @@
 # Ateliers_2018
+<<<<<<< HEAD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
@@ -26,3 +27,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+Test App Ateliers para Web
+
+Building in Angular 2
+>>>>>>> 36939c0843de12fca1afa415fcd99bd64e53510e
