@@ -2,16 +2,16 @@
 <header>
     <nav class="navbar navbar-inverse bg-custom">
         <ul class="navbar-nav">
-            <li class="nav-item d-xs-none">
-                <a class="nav-link" [routerLink]="['/main']">
+            <li class="nav-item d-xs-none" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']">
                     <img src="./assets/img/home/logo.png" alt="">
                 </a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" [routerLink]="['/recetas']" id="recetas">Recetas</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['recetas']" id="recetas">Recetas</a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" [routerLink]="['/main']" id="talleres">Talleres</a>
+            <li class="nav-item" >
+                <a class="nav-link" [routerLink]="['talleres']" id="talleres">Talleres</a>
             </li>
         </ul>
     </nav>
